@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install -y apache2 libapache2-mod-php7.1
+apt-get install -y apache2 libapache2-mod-php7.0
 sed -i "s/www-data/vagrant/" /etc/apache2/envvars
 
 PATH_SSL="/etc/apache2/ssl"
